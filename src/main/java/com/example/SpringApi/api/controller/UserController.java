@@ -14,10 +14,6 @@ import java.util.Optional;
 public class UserController {
     @Autowired
     private  UserService userService;
-//    @Autowired
-//    public UserController(UserService userService){
-//        this.userService=userService;
-//    }
     @GetMapping("/user")
     public Entitis getUser(@RequestParam Integer id){
         Entitis user = userService.getUser(id);
